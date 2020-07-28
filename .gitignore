@@ -1,0 +1,4 @@
+chromedriver*
+*.csv
+__pycache__
+.vscode

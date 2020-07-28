@@ -84,8 +84,8 @@ class LinkedinScrap:
         jobs_per_page = 0
         writer = csv.writer(open(self.outputcsv, 'w', encoding='utf-8'))
 
-        writer.writerow(['Job_Title', 'Job_Description', 'company', 'location', 'Industry', 'Employment_type', 'Job Function',
-                 'Experience_Level'])
+        writer.writerow(['job_description', 'company_name', 'location', 'industry_1', 'employement_type',
+         'industry_2', 'experience_Level', 'current_url'])
 
         print("\nLooking for jobs.. Please wait..\n")
         self.browser.set_window_position(0, 0)
@@ -178,7 +178,7 @@ class LinkedinScrap:
                 except:
                     experience_Level = None
 
-                writer.writerow([job_name, job_description, company_name, location, industry, employement_type,
+                writer.writerow([job_description, company_name, location, industry, employement_type,
                          job_function, experience_Level, current_url])
 
                 time.sleep(random.uniform(3.5, 10))

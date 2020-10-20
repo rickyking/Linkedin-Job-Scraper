@@ -1,8 +1,8 @@
 {
-    "username": "", // linkedin username
-    "password": "", // linkedin password
-    "language": "en", // user interface language
-    "position": "Data Analyst", // search term
-    "location": "United States", // search area
-    "max_jobs": 1000 // max jobs to get
+    "username": "",
+    "password": "",
+    "language": "en",
+    "position": "Data Analyst",
+    "location": "United States",
+    "max_jobs": 1000
 }
